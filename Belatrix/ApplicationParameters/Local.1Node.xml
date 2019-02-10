@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/Belatrix" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
+    <Parameter Name="Belatrix.CheckoutService_PartitionCount" Value="1" />
+    <Parameter Name="Belatrix.CheckoutService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="Belatrix.CheckoutService_TargetReplicaSetSize" Value="1" />
     <Parameter Name="Belatrix.API_ASPNETCORE_ENVIRONMENT" Value="Development" />
     <Parameter Name="Belatrix.API_InstanceCount" Value="1" />
     <Parameter Name="Belatrix.ProductCatalog_PartitionCount" Value="1" />

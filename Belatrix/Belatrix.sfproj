@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Belatrix.API\Belatrix.API.csproj" />
+    <ProjectReference Include="..\Belatrix.CheckoutService\Belatrix.CheckoutService.csproj" />
     <ProjectReference Include="..\Belatrix.ProductCatalog\Belatrix.ProductCatalog.csproj" />
     <ProjectReference Include="..\Belatrix.UserActor\Belatrix.UserActor.csproj" />
   </ItemGroup>

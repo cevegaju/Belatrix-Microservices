@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.ProductCatalog", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Service Fabric", "1. Service Fabric", "{514F7245-C526-47BB-8C8C-A0CEFC74DA59}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Product Catalog", "2. Product Catalog", "{6597E25C-9284-4858-954D-154A17169463}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. ProductCatalog", "2. ProductCatalog", "{6597E25C-9284-4858-954D-154A17169463}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.ProductCatalog.Models", "Belatrix.ProductCatalog.Models\Belatrix.ProductCatalog.Models.csproj", "{C13F2357-661F-4050-8AC1-4795B465C71E}"
 EndProject
@@ -19,9 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.API", "Belatrix.AP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Actors", "4. Actors", "{4C1296D3-C903-47A4-9AA1-CF719DDF0FBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.UserActor", "Belatrix.UserActor\Belatrix.UserActor.csproj", "{42AAFFF9-91CC-4ACE-A426-3BD95A64D606}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.UserActor", "Belatrix.UserActor\Belatrix.UserActor.csproj", "{42AAFFF9-91CC-4ACE-A426-3BD95A64D606}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.UserActor.Interfaces", "Belatrix.UserActor.Interfaces\Belatrix.UserActor.Interfaces.csproj", "{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.UserActor.Interfaces", "Belatrix.UserActor.Interfaces\Belatrix.UserActor.Interfaces.csproj", "{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Checkout", "5. Checkout", "{52F08D02-A563-41F4-98E7-FC42D29D2C1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.CheckoutService", "Belatrix.CheckoutService\Belatrix.CheckoutService.csproj", "{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.CheckoutService.Models", "Belatrix.CheckoutService.Models\Belatrix.CheckoutService.Models.csproj", "{291284A6-3D61-4888-969F-C0F229B5F67F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +85,22 @@ Global
 		{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC}.Release|x64.ActiveCfg = Release|Any CPU
 		{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC}.Release|x64.Build.0 = Release|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Debug|x64.Build.0 = Debug|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Release|x64.ActiveCfg = Release|Any CPU
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9}.Release|x64.Build.0 = Release|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Debug|x64.Build.0 = Debug|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Release|x64.ActiveCfg = Release|Any CPU
+		{291284A6-3D61-4888-969F-C0F229B5F67F}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +112,8 @@ Global
 		{F3B8A78B-EC69-44E3-A1A0-D8489E1716B8} = {68D8BA6F-0347-48B0-A7A9-9207C84A6AA4}
 		{42AAFFF9-91CC-4ACE-A426-3BD95A64D606} = {4C1296D3-C903-47A4-9AA1-CF719DDF0FBA}
 		{3CF5ECF9-0AAC-46F0-9A10-6EEA7E81E2AC} = {4C1296D3-C903-47A4-9AA1-CF719DDF0FBA}
+		{5324D951-EBBF-48E6-BBFC-0C3B1AFB8BF9} = {52F08D02-A563-41F4-98E7-FC42D29D2C1A}
+		{291284A6-3D61-4888-969F-C0F229B5F67F} = {52F08D02-A563-41F4-98E7-FC42D29D2C1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14E783EA-7FED-47F0-B730-9BA3706CECD8}

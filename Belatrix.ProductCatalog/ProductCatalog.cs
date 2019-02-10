@@ -29,6 +29,11 @@ namespace Belatrix.ProductCatalog
             return await _repo.GetAllProducts();
         }
 
+        public async Task<Product> GetProduct(Guid productId)
+        {
+            return await _repo.GetProduct(productId);
+        }
+
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
         {
             return this.CreateServiceRemotingReplicaListeners();
