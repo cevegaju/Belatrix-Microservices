@@ -6,10 +6,16 @@
     <Parameter Name="Belatrix.ProductCatalog_MinReplicaSetSize" DefaultValue="3" />
     <Parameter Name="Belatrix.ProductCatalog_PartitionCount" DefaultValue="1" />
     <Parameter Name="Belatrix.ProductCatalog_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="UserActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="UserActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="UserActorService_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
        should match the Name and Version attributes of the ServiceManifest element defined in the 
        ServiceManifest.xml file. -->
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="Belatrix.UserActorPkg" ServiceManifestVersion="1.0.0" />
+  </ServiceManifestImport>
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="Belatrix.APIPkg" ServiceManifestVersion="1.0.0" />
     <ConfigOverrides />
@@ -35,6 +41,11 @@
     <Service Name="Belatrix.ProductCatalog" ServicePackageActivationMode="ExclusiveProcess">
       <StatefulService ServiceTypeName="Belatrix.ProductCatalogType" TargetReplicaSetSize="[Belatrix.ProductCatalog_TargetReplicaSetSize]" MinReplicaSetSize="[Belatrix.ProductCatalog_MinReplicaSetSize]">
         <UniformInt64Partition PartitionCount="[Belatrix.ProductCatalog_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="UserActorService" GeneratedIdRef="b410f1cb-7eb4-4124-945a-1f3c0e910595|Persisted">
+      <StatefulService ServiceTypeName="UserActorServiceType" TargetReplicaSetSize="[UserActorService_TargetReplicaSetSize]" MinReplicaSetSize="[UserActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[UserActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
       </StatefulService>
     </Service>
   </DefaultServices>
